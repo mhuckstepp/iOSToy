@@ -6,14 +6,37 @@
 //
 
 import UIKit
+import Swinject
+
+protocol ColorProviding {
+    var color: UIColor { get }
+}
+
+class ColorProvider: ColorProviding {
+    var color: UIColor = .red
+}
 
 class FirstViewController: UIViewController, GridViewDelegate {
+
+    let container: Container = {
+        let container = Container()
+        container.register(ColorProviding.self) { _ in
+            return ColorProvider()
+        }
+        container.register(CustomColorViewController.self) { resolver in
+            return CustomColorViewController(colorProvider: resolver.resolve(ColorProviding.self)!)
+        }
+        return container
+    }()
+
     func mainButtonTapped() {
         print("Delegated!!!!")
-        present(CustomColorViewController(), animated: true)
+//        let vc = CustomColorViewController(colorProvider: ColorProvider())
+        guard let vc = container.resolve(CustomColorViewController.self) else { return }
+        present(vc, animated: true)
     }
 
-    lazy var gridView: GridView = GridView()
+    lazy var gridView: GridView = GridView(mainBackgroundColor: .green)
 
     override func viewDidLoad() {
         super.viewDidLoad()

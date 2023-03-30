@@ -10,10 +10,11 @@
 		3303750629C4D13E0005D13A /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3303750529C4D13E0005D13A /* GridView.swift */; };
 		3393C90C29C4C7CC0084F304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393C90B29C4C7CC0084F304 /* AppDelegate.swift */; };
 		3393C90E29C4C7CC0084F304 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393C90D29C4C7CC0084F304 /* SceneDelegate.swift */; };
-		3393C91029C4C7CC0084F304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393C90F29C4C7CC0084F304 /* ViewController.swift */; };
+		3393C91029C4C7CC0084F304 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3393C90F29C4C7CC0084F304 /* FirstViewController.swift */; };
 		3393C91529C4C7CE0084F304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3393C91429C4C7CE0084F304 /* Assets.xcassets */; };
 		3393C91829C4C7CE0084F304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3393C91629C4C7CE0084F304 /* LaunchScreen.storyboard */; };
 		33C4042529CA479600272473 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C4042429CA479600272473 /* TabBar.swift */; };
+		E97D812129D60247009F3988 /* CustomColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97D812029D60247009F3988 /* CustomColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,12 @@
 		3393C90829C4C7CC0084F304 /* delegateToy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = delegateToy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3393C90B29C4C7CC0084F304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3393C90D29C4C7CC0084F304 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3393C90F29C4C7CC0084F304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3393C90F29C4C7CC0084F304 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		3393C91429C4C7CE0084F304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3393C91729C4C7CE0084F304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3393C91929C4C7CE0084F304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33C4042429CA479600272473 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		E97D812029D60247009F3988 /* CustomColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +63,12 @@
 				3393C90B29C4C7CC0084F304 /* AppDelegate.swift */,
 				3393C90D29C4C7CC0084F304 /* SceneDelegate.swift */,
 				33C4042429CA479600272473 /* TabBar.swift */,
-				3393C90F29C4C7CC0084F304 /* ViewController.swift */,
+				3393C90F29C4C7CC0084F304 /* FirstViewController.swift */,
 				3393C91429C4C7CE0084F304 /* Assets.xcassets */,
 				3393C91629C4C7CE0084F304 /* LaunchScreen.storyboard */,
 				3393C91929C4C7CE0084F304 /* Info.plist */,
 				3303750529C4D13E0005D13A /* GridView.swift */,
+				E97D812029D60247009F3988 /* CustomColorViewController.swift */,
 			);
 			path = delegateToy;
 			sourceTree = "<group>";
@@ -140,9 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3393C91029C4C7CC0084F304 /* ViewController.swift in Sources */,
+				3393C91029C4C7CC0084F304 /* FirstViewController.swift in Sources */,
 				3393C90C29C4C7CC0084F304 /* AppDelegate.swift in Sources */,
 				3303750629C4D13E0005D13A /* GridView.swift in Sources */,
+				E97D812129D60247009F3988 /* CustomColorViewController.swift in Sources */,
 				3393C90E29C4C7CC0084F304 /* SceneDelegate.swift in Sources */,
 				33C4042529CA479600272473 /* TabBar.swift in Sources */,
 			);

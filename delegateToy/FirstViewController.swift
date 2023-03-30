@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FirstViewController.swift
 //  delegateToy
 //
 //  Created by Maxim Huckstepp on 3/17/23.
@@ -10,6 +10,7 @@ import UIKit
 class FirstViewController: UIViewController, GridViewDelegate {
     func mainButtonTapped() {
         print("Delegated!!!!")
+        present(CustomColorViewController(), animated: true)
     }
 
     lazy var gridView: GridView = GridView()

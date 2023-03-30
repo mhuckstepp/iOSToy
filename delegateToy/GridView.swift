@@ -12,8 +12,11 @@ protocol GridViewDelegate: AnyObject {
 }
 
 class GridView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    let mainBackgroundColor: UIColor
+
+    init(mainBackgroundColor: UIColor) {
+        self.mainBackgroundColor = mainBackgroundColor
+        super.init(frame: .zero)
         translatesAutoresizingMaskIntoConstraints = false
         addSubview(mainButton1)
         NSLayoutConstraint.activate([
@@ -29,7 +32,7 @@ class GridView: UIView {
         let mainButton1 = UIButton()
         mainButton1.setTitle("some button", for: .normal)
         mainButton1.setTitle("Disabled button", for: .disabled)
-        mainButton1.backgroundColor = .green
+        mainButton1.backgroundColor = mainBackgroundColor
         mainButton1.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
         mainButton1.translatesAutoresizingMaskIntoConstraints = false
         return mainButton1
